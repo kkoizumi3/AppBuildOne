@@ -9,11 +9,15 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var firstLabelUHWO: UILabel!
+  
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
+        self.firstLabelUHWO.text = "University of Hawaii West Oahu"
     }
-
+    
 
 }
 
