@@ -8,21 +8,49 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Item 2-->
+        <!--Second View Controller-->
         <scene sceneID="dR7-IS-bpV">
             <objects>
-                <viewController id="tyT-eT-r7p" sceneMemberID="viewController">
+                <viewController id="tyT-eT-r7p" customClass="secondViewController" customModule="AppBuildOne" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5ke-fw-8Mq">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="The Answer is" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6i0-kA-X2R">
+                                <rect key="frame" x="63" y="217" width="154" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5dY-5c-GPP">
+                                <rect key="frame" x="281" y="217" width="71" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VcA-2e-5qW">
+                                <rect key="frame" x="149" y="531" width="95" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Calculate"/>
+                                <connections>
+                                    <action selector="calculateButton:" destination="tyT-eT-r7p" eventType="touchUpInside" id="Rw4-yx-yTC"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="OGK-5j-8Km"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="eMd-V4-Yld"/>
+                    <navigationItem key="navigationItem" id="AyB-cL-dvR"/>
+                    <connections>
+                        <outlet property="calculationAnswer" destination="5dY-5c-GPP" id="lzY-gE-c15"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nHH-MT-fEV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1449.6183206106869" y="248.59154929577466"/>
+            <point key="canvasLocation" x="2374.8091603053435" y="248.59154929577466"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="syg-Do-bKc">
@@ -32,8 +60,34 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X10-wh-Dbj">
+                                <rect key="frame" x="42" y="609" width="125" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="about UHWO"/>
+                                <connections>
+                                    <action selector="aboutWestButton:" destination="pit-e5-v7O" eventType="touchUpInside" id="YeS-8w-eUe"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lxE-jy-bAc">
+                                <rect key="frame" x="243" y="609" width="109" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="about ACM"/>
+                                <connections>
+                                    <action selector="aboutAcademyButton:" destination="pit-e5-v7O" eventType="touchUpInside" id="gw8-Uu-3b8"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="12" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fOv-7k-sfl">
+                                <rect key="frame" x="26" y="273" width="351" height="303"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zk5-2P-cOf">
-                                <rect key="frame" x="37" y="201" width="318" height="130"/>
+                                <rect key="frame" x="37" y="127" width="318" height="130"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -46,11 +100,12 @@
                     <navigationItem key="navigationItem" id="NXr-aV-hwb"/>
                     <connections>
                         <outlet property="firstLabelUHWO" destination="zk5-2P-cOf" id="uGa-bg-chc"/>
+                        <outlet property="secondLabelUHWODesc" destination="fOv-7k-sfl" id="MDe-MR-E8V"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FQR-Tr-Mmv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1449.6183206106869" y="-358.45070422535213"/>
+            <point key="canvasLocation" x="2374.8091603053435" y="-358.45070422535213"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="k5B-av-1q7">
@@ -63,7 +118,7 @@
                     </tabBar>
                     <connections>
                         <segue destination="5gS-7D-6vf" kind="relationship" relationship="viewControllers" id="W0j-JM-Udo"/>
-                        <segue destination="tyT-eT-r7p" kind="relationship" relationship="viewControllers" id="bv4-XS-Sj9"/>
+                        <segue destination="0fL-pJ-xxN" kind="relationship" relationship="viewControllers" id="bv4-XS-Sj9"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dtg-vk-5Pa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -88,6 +143,25 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Y39-eK-Bft" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="522.90076335877859" y="-358.45070422535213"/>
+        </scene>
+        <!--Item 2-->
+        <scene sceneID="Hsb-gt-HQI">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="0fL-pJ-xxN" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item 2" id="eMd-V4-Yld"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="bbZ-Fh-ijc">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="tyT-eT-r7p" kind="relationship" relationship="rootViewController" id="V9D-tg-4PW"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LA8-lm-v5b" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1448.0916030534352" y="248.59154929577466"/>
         </scene>
     </scenes>
     <resources>

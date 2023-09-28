@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3C51DE372AC503FD00BD8EA0 /* secondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C51DE362AC503FD00BD8EA0 /* secondViewController.swift */; };
 		3C64FB002AC42D3800D0F50E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C64FAFF2AC42D3800D0F50E /* AppDelegate.swift */; };
 		3C64FB022AC42D3800D0F50E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C64FB012AC42D3800D0F50E /* SceneDelegate.swift */; };
 		3C64FB042AC42D3800D0F50E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C64FB032AC42D3800D0F50E /* ViewController.swift */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3C51DE362AC503FD00BD8EA0 /* secondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = secondViewController.swift; sourceTree = "<group>"; };
 		3C64FAFC2AC42D3800D0F50E /* AppBuildOne.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppBuildOne.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C64FAFF2AC42D3800D0F50E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3C64FB012AC42D3800D0F50E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -79,6 +81,7 @@
 		3C64FAF32AC42D3800D0F50E = {
 			isa = PBXGroup;
 			children = (
+				3C51DE362AC503FD00BD8EA0 /* secondViewController.swift */,
 				3C64FAFE2AC42D3800D0F50E /* AppBuildOne */,
 				3C64FB152AC42D3900D0F50E /* AppBuildOneTests */,
 				3C64FB1F2AC42D3900D0F50E /* AppBuildOneUITests */,
@@ -258,6 +261,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C51DE372AC503FD00BD8EA0 /* secondViewController.swift in Sources */,
 				3C64FB042AC42D3800D0F50E /* ViewController.swift in Sources */,
 				3C64FB002AC42D3800D0F50E /* AppDelegate.swift in Sources */,
 				3C64FB022AC42D3800D0F50E /* SceneDelegate.swift in Sources */,
